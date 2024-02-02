@@ -13,7 +13,6 @@ function App() {
     const response = await axios.get(apiWeather)
     setData(response.data)
     document.body.style.background = `url('https://source.unsplash.com/1600x1000/?Cidade-${cityName}')`
-    console.log(response.data)
   }
 
   return (
