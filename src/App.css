@@ -7,7 +7,7 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-body {
+.body {
   background: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%);
   background-repeat: no-repeat;
   display: flex;
@@ -56,6 +56,25 @@ body {
   cursor: pointer;
 }
 
+/* pré requisição */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  row-gap: .8rem;
+  column-gap: 14px;
+  margin-top: 3rem;
+}
+
+.btn {
+  width: calc(100% - 14px);
+  color: white;
+  background-color: #8dd0f5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: .8rem;
+}
+
 /* CLima */
 #weather-data {
   border-top: 1px solid #fff;
@@ -77,6 +96,11 @@ body {
 
 #weather-data span {
   margin: 0.6rem;
+}
+
+#temperature {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 #country {
