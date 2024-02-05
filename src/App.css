@@ -14,10 +14,34 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-repeat: no-repeat;
+  background-clip: border-box;
 }
 
 .hide {
   display: none;
+}
+
+.erros {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .6rem;  
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #fff;
+}
+
+.carregando {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .6rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #fff;
 }
 
 .container {
@@ -56,6 +80,11 @@
   cursor: pointer;
 }
 
+form {
+  width: 100%;
+  display: flex;
+}
+
 /* pré requisição */
 .buttons {
   display: grid;
@@ -63,6 +92,7 @@
   row-gap: .8rem;
   column-gap: 14px;
   margin-top: 3rem;
+
 }
 
 .btn {
